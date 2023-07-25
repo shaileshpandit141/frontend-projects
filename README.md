@@ -22,7 +22,6 @@ If you need help or want to learn more about front-end development, consider che
 
 * W3Schools: https://www.w3schools.com/
 * Mozilla Developer Network (MDN) Web Docs: https://developer.mozilla.org/
-* FreeCodeCamp: https://www.freecodecamp.org/
 
 ---
 We hope you find this beginner front-end project enjoyable and educational. Happy coding! If you have any questions, don't hesitate to ask.
