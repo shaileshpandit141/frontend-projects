@@ -1,0 +1,143 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* || RESET */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: var(--paragraph-color);
+}
+
+:root {
+    --body-bg-color: #4c4c4c;
+    --article-bg-color: #272727;
+    --paragraph-color: #ffffff;
+}
+
+/* || Body  */
+body {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    background-color: var(--body-bg-color);
+    display: flex;
+    justify-content: center;
+}
+
+/* || Set Section size */
+.section__container {
+    width: 85%;
+    height: auto;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+
+.news__article {
+    background-color: var(--article-bg-color);
+    width: 350px;
+    min-width: 250px;
+    margin: 0.5rem;
+    padding: .5rem;
+    border-radius: 10px;
+    border: 2px solid #777777;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    
+}
+
+@media (width < 481px) {
+    .news__article {
+        width: 95%;
+    }
+}
+
+.news__article:hover {
+    box-shadow:0px 5px 8px var(--article-bg-color);
+}
+
+.news__article__figure {
+    width: 100%;
+    height: auto;
+    margin-bottom: .8rem;
+    position: relative;
+    border-radius: 10px;
+}
+
+.news__article__figure img{
+    width: inherit;
+    border-radius: inherit;
+    object-fit: cover;
+}
+
+.date__time__container {
+    padding: 5px 10px;
+    position: absolute;
+    left: 0px;
+    bottom: 4px;
+    font-weight: 500;
+
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.date__time {
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    word-spacing: 0.02em;
+}
+
+
+.news__article__title {
+    margin-bottom: .8rem;
+    font-size: 1.3em;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    word-spacing: 0.02em;
+}
+
+.news__article__discription {
+    margin-bottom: 1.5rem;
+    font-size: 1.1em;
+    letter-spacing: 0.02em;
+    word-spacing: 0.02em;
+    font-weight: 300;
+}
+
+.read__more__container {
+    background-color: #ffffff;
+    text-decoration: none;
+
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    width: 100%;
+    padding: .8rem 2rem;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.read__more__container:hover {
+    background-color: #dadada;
+}
+
+.read__more__text {
+    color: black;
+    font-size: 1.2em;
+    letter-spacing: 0.02em;
+    word-spacing: 0.02em;
+    font-weight: 500;
+    margin-right: auto;
+}
+
+.read__more__arrow {
+    color: #000000;
+    font-weight: bolder;
+}
+
